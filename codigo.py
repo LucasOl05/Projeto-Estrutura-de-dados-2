@@ -303,3 +303,8 @@ if __name__ == "__main__":
     plota_linhas_tempo_medio(df, "grafico_linha_tempo_medio.png")
 
 
+
+
+
+
+
