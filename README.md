@@ -1,4 +1,5 @@
 Respostas 1 a 6
+
 1-) O selection sort é o algoritmo que deu maior número de comparações e com forma mais consistente pois ele executa sempre seus 2 for até encontrar o menor numero independente da ordem inicial.
 
 2-)o Bubble sort faz o maior número de trocas sendo o 0(n2) no pior caso.
