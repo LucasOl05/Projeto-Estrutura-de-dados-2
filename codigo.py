@@ -214,7 +214,6 @@ def roda_benchmark(tamanhos=TAMANHOS):
             ll_base = LinkedList(dados_lista)
 
             for nome_alg in ALGORITMOS:
-                # Array
                 comps, trocas, tempo = ARRAY_SORTERS[nome_alg](dados_lista)
                 linhas.append({
                     "tamanho": size, "cenario": cenario, "algoritmo": nome_alg,
@@ -222,7 +221,7 @@ def roda_benchmark(tamanhos=TAMANHOS):
                     "comparacoes": comps, "trocas": trocas
                 })
 
-                # Lista Ligada
+            
                 comps, trocas, tempo = LL_SORTERS[nome_alg](ll_base)
                 linhas.append({
                     "tamanho": size, "cenario": cenario, "algoritmo": nome_alg,
@@ -289,7 +288,7 @@ def plota_linhas_tempo_medio(df, arquivo_saida):
 
     fig.tight_layout()
     fig.savefig(arquivo_saida, dpi=150)
-    plt.show()  # Exibe no Colab
+    plt.show()  
     plt.close(fig)
 
 
